@@ -5,7 +5,7 @@ import 'helpcentrepage.dart';
 import 'languagepage.dart';
 import 'travelpage.dart';
 
-void main() {
+executehomepage() {
   bool IsLogin = false;
   print(
       "'Welcome to  Pakistan - Where Beauty Meets Culture_Discover breathtaking landscapes, rich history, and warm hospitality. Your adventure awaits'");

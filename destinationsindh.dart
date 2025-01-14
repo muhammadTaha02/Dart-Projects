@@ -2,10 +2,13 @@ import 'dart:io';
 
 destination_Sindh() {
   bool IsLogin = false;
+  print("'Welcome to Sindh: where history meets harmony.'");
 
   print("Press 1 for Thattha District");
   print("Press 2 for Sukkur District");
   print("Press 3 for Hyderabad District");
+  print("==================================");
+
   while (IsLogin == false) {
     String input = stdin.readLineSync()!;
     if (input == "1") {

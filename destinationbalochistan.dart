@@ -2,10 +2,14 @@ import 'dart:io';
 
 destination_balochistan() {
   bool IsLogin = false;
+  print(
+      "'Welcome to Balochistan: where nature meets culture in breathtaking harmony.'");
 
   print("Press 1 for Ziarat District");
   print("Press 2 for Gwadar District");
   print("Press 3 for Chagi District");
+  print("==================================");
+
   while (IsLogin == false) {
     String input = stdin.readLineSync()!;
     if (input == "1") {

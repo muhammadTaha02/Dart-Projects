@@ -12,6 +12,8 @@ executedestination() {
   print("Press P for Punjab Tour");
   print("Press S for Sindh Tour");
   print("Press B for Balochistan Tour");
+  print("==================================");
+
   while (IsLogin == false) {
     String Input = stdin.readLineSync()!.toLowerCase();
 

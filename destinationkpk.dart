@@ -2,10 +2,14 @@ import 'dart:io';
 
 destination_KpK() {
   bool IsLogin = false;
+  print(
+      "'Welcome to KPK! Experience breathtaking mountains and rich culture.'");
 
   print("Press 1 for Malakand District");
   print("Press 2 for Chitral District");
   print("Press 3 for Mansehra District");
+  print("==================================");
+
   while (IsLogin == false) {
     String input = stdin.readLineSync()!;
     if (input == "1") {

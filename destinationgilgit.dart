@@ -2,9 +2,12 @@ import 'dart:io';
 
 destination_gilgit() {
   bool IsLogin = false;
+  print("'Welcome to Gilgit! Explore stunning peaks and vibrant culture.'");
+
   print("Press  A for Gilgit District");
   print("Press B for for Skardu District");
   print("Press C for Hunza Valley");
+  print("==================================");
 
   while (IsLogin == false) {
     String input = stdin.readLineSync()!.toLowerCase();
@@ -29,6 +32,9 @@ destination_gilgit() {
       print("-Hussaini Bridge Visit");
       print("-Passu Cones Visit");
       print("==================================");
+    } else {
+      print("Invalid Input");
+      print("Please Try Again");
     }
   }
 }

@@ -2,10 +2,13 @@ import 'dart:io';
 
 destination_Punjab() {
   bool IsLogin = false;
+  print("'Welcome to Punjab! Discover rich heritage and vibrant life.'");
 
   print("Press 1 for Multan District");
   print("Press 2 for Islamabad District");
   print("Press 3 for Lahore District");
+  print("==================================");
+
   while (IsLogin == false) {
     String input = stdin.readLineSync()!;
     if (input == "1") {
@@ -34,6 +37,7 @@ destination_Punjab() {
     } else {
       print("Invalid Input");
       print("Please Try Again");
+      print("==============================");
     }
   }
 }
