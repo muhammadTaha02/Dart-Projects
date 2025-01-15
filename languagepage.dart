@@ -1,21 +1,45 @@
 import 'dart:io';
 
+import 'bookingpage.dart';
+import 'destinatinationpage.dart';
+import 'helpcentrepage.dart';
+import 'travelpage.dart';
+
 executeLanguage() {
   bool IsLogin = false;
 
   print("Press A for Urdu");
   print("Press B for English");
+  print("Press 2 for Destination Page");
+  print("Press 3 for Travel Packages");
+  print("Press 4 for Booking Package");
+  print("Press 5 for Help Centre");
 
   while (IsLogin == false) {
     String input = stdin.readLineSync()!.toLowerCase();
     if (input == "a") {
       print("Urdu");
+      print("=====================");
     } else if (input == "b") {
       print("English");
-      IsLogin == true;
+      print("=====================");
+      IsLogin = true;
+    } else if (input == "2") {
+      executedestination();
+      print("==================================");
+    } else if (input == "3") {
+      executetravelpackage();
+      print("==================================");
+    } else if (input == "4") {
+      executebooking();
+      print("==================================");
+    } else if (input == "5") {
+      executehelpcentre();
+      print("==================================");
+      IsLogin = true;
     } else {
-      print("Invalid Character");
-      print("Try Again");
+      print("Invalid Input");
+      print("Please Try Again");
       print("==================================");
     }
   }

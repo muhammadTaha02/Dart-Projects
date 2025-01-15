@@ -1,8 +1,12 @@
 executetravelpackage() {
-  print("Press K for Azad Kashmir Package");
-  print("Press L for Lahore Package");
-  print("Press H for Hunza Valley Package");
-  print("Press S for  Package");
-  print("Press R for Karachi Package");
-  print("Press K for  Package");
+  bool IsLogin = false;
+  print("Press G for Gilgit Baltistan Tour");
+  print("Press K for KPK Tour");
+  print("Press P for Punjab Tour");
+  print("Press S for Sindh Tour");
+  print("Press B for Balochistan Tour");
+  print("Press 1 for Language Selection");
+  print("Press 2 for Destination Page");
+  print("Press 4 for Booking Package");
+  print("Press 5 for Help Centre");
 }

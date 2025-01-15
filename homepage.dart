@@ -7,13 +7,20 @@ import 'travelpage.dart';
 
 executehomepage() {
   bool IsLogin = false;
+  print("==================================");
   print(
       "'Welcome to  Pakistan - Where Beauty Meets Culture_Discover breathtaking landscapes, rich history, and warm hospitality. Your adventure awaits'");
+  print("==================================");
   print("Press 1 for Language Selection");
+  print("------------------------------");
   print("Press 2 for Destination Page");
+  print("------------------------------");
   print("Press 3 for Travel Packages");
+ print("------------------------------");
   print("Press 4 for Booking Package");
+ print("------------------------------");
   print("Press 5 for Help Centre");
+  print("==================================");
   while (IsLogin == false) {
     String input = stdin.readLineSync()!;
     if (input == "1") {

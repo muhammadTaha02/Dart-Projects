@@ -3,19 +3,25 @@ import 'dart:io';
 import 'homepage.dart';
 
 void main() {
-  bool IsLogin = false;
+  bool isLogin = false;
 
-  String Inputemail = "tahatariq@gmail.com";
-  String Inputpassword = "1234";
-
+  // Hardcoded credentials
   String email = "tahatariq@gmail.com";
   String password = "1234";
 
-  while (IsLogin == false) {
-    String input = stdin.readLineSync()!;
-    if (Inputemail == email && Inputpassword == password) {
+  while (!isLogin) {
+    print("Enter Email:");
+    String userInputEmail = stdin.readLineSync()!;
+    print("==================================");
+
+    print("Enter Password:");
+    String userInputPassword = stdin.readLineSync()!;
+    print("==================================");
+
+    if (userInputEmail == email && userInputPassword == password) {
       executehomepage();
-      IsLogin = true;
+      isLogin = true;
+      print("Login successful!");
       print("==============================");
     } else {
       print("Invalid Email or Password");
