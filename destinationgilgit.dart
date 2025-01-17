@@ -9,24 +9,24 @@ import 'homepage.dart';
 destination_gilgit() {
   bool IsLogin = false;
 
+  print(
+      "---------------------------- 'Welcome to Gilgit! Explore stunning peaks and vibrant culture'. ------------------------'");
+
+  print("-Press  I for Gilgit District");
+  print("------------------------------");
+  print("-Press R for for Skardu District");
+  print("------------------------------");
+  print("-Press H for Hunza Valley");
   print("==================================");
-  print("'Welcome to Gilgit! Explore stunning peaks and vibrant culture.'");
-  print("==================================");
-  print("Press  I for Gilgit District");
+  print("-Press B for Balochistan Page");
   print("------------------------------");
-  print("Press R for for Skardu District");
+  print("-Press K for Kpk Page");
   print("------------------------------");
-  print("Press H for Hunza Valley");
-  print("==================================");
-  print("Press B for Balochistan Page");
+  print("-Press P for Punjab Page");
   print("------------------------------");
-  print("Press K for Kpk Page");
+  print("-Press S for Sindh Page");
   print("------------------------------");
-  print("Press P for Punjab Page");
-  print("------------------------------");
-  print("Press S for Sindh Page");
-  print("------------------------------");
-  print("Press 1 for Home Page");
+  print("-Press 1 for Home Page");
   print("==================================");
 
   while (IsLogin == false) {

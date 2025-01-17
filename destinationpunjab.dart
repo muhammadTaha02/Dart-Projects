@@ -9,24 +9,24 @@ import 'homepage.dart';
 
 destination_Punjab() {
   bool IsLogin = false;
+ 
+  print("'------------------------------'Welcome to Punjab! Discover rich heritage and vibrant life.' ----------------------------'");
+  
+  print("-Press E for Multan District");
+  print("------------------------------");
+  print("-Press D for Islamabad District");
+  print("------------------------------");
+  print("-Press O for Lahore District");
   print("==================================");
-  print("'Welcome to Punjab! Discover rich heritage and vibrant life.'");
-  print("==================================");
-  print("Press E for Multan District");
+  print("-Press B for Balochistan Page");
   print("------------------------------");
-  print("Press D for Islamabad District");
+  print("-Press G  for Gilgit Page");
   print("------------------------------");
-  print("Press O for Lahore District");
-  print("==================================");
-  print("Press B for Balochistan Page");
+  print("-Press K for Kpk Page");
   print("------------------------------");
-  print("Press G  for Gilgit Page");
+  print("-Press S for Sindh Page");
   print("------------------------------");
-  print("Press K for Kpk Page");
-  print("------------------------------");
-  print("Press S for Sindh Page");
-  print("------------------------------");
-  print("Press 1 for Home Page");
+  print("-Press 1 for Home Page");
   print("==================================");
 
   while (IsLogin == false) {

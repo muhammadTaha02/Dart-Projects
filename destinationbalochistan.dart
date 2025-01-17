@@ -9,25 +9,25 @@ import 'homepage.dart';
 destination_balochistan() {
   bool IsLogin = false;
 
-  print("==================================");
+  
   print(
-      "'Welcome to Balochistan: where nature meets culture in breathtaking harmony.'");
+      "--------------- 'Welcome to Balochistan: where nature meets culture in breathtaking harmony.' ------------------");
+  
+  print("-Press Z for Ziarat District");
+  print("------------------------------");
+  print("-Press W for Gwadar District");
+  print("------------------------------");
+  print("-Press C for Chagi District");
   print("==================================");
-  print("Press Z for Ziarat District");
+  print("-Press G for Gilgit Page");
   print("------------------------------");
-  print("Press W for Gwadar District");
+  print("-Press K for Kpk Page");
   print("------------------------------");
-  print("Press C for Chagi District");
-  print("==================================");
-  print("Press G for Gilgit Page");
+  print("-Press P for Punjab Page");
   print("------------------------------");
-  print("Press K for Kpk Page");
+  print("-Press S for Sindh Page");
   print("------------------------------");
-  print("Press P for Punjab Page");
-  print("------------------------------");
-  print("Press S for Sindh Page");
-  print("------------------------------");
-  print("Press 1 for Home Page");
+  print("-Press 1 for Home Page");
    print("==================================");
 
   while (IsLogin == false) {

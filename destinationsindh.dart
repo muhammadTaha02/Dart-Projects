@@ -8,9 +8,9 @@ import 'homepage.dart';
 
 destination_Sindh() {
   bool IsLogin = false;
-  print("==================================");
-  print("'Welcome to Sindh: where history meets harmony.'");
-  print("==================================");
+  
+  print("'--------------------------- 'Welcome to Sindh: where history meets harmony.' ---------------------------'");
+
   print("Press J for Thattha District");
   print("------------------------------");
   print("Press U for Sukkur District");

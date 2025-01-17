@@ -7,8 +7,8 @@ import 'travelpage.dart';
 
 executehelpcentre() {
   bool IsLogin = false;
-  String number = "021-12345678";
-  String Chatwithus = "Yes, How can i Help you?";
+print("--------------------How can we assist you today? Your answers are just a step away!---------------------");
+
   print("Press N  for Calling Agent ");
   print("==================================");
   print("Press C for Start Chat with Agent ");
@@ -25,12 +25,12 @@ executehelpcentre() {
   while (IsLogin == false) {
     String input = stdin.readLineSync()!.toLowerCase();
     if (input == "n") {
-      print("($number)");
+      print("(021-12334567)");
       print("==================================");
     } else if (input == "c") {
-      print("$Chatwithus");
+      print("Yes, How can I Help You?");
       print("==================================");
-      IsLogin = true;
+      
     } else if (input == "1") {
       executeLanguage();
       print("==================================");

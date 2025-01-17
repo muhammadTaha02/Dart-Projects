@@ -6,11 +6,16 @@ import 'languagepage.dart';
 import 'travelpage.dart';
 
 executehomepage() {
+ 
+ print("-------------------------- Welcome—where your journey begins! -----------------------------");
+ 
+ 
+ 
   bool IsLogin = false;
-  print("==================================");
+
   print(
       "'Welcome to  Pakistan - Where Beauty Meets Culture_Discover breathtaking landscapes, rich history, and warm hospitality. Your adventure awaits'");
-  print("==================================");
+
   print("Press 1 for Language Selection");
   print("------------------------------");
   print("Press 2 for Destination Page");
