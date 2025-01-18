@@ -7,7 +7,8 @@ import 'travelpage.dart';
 
 executeLanguage() {
   bool IsLogin = false;
-print("-------------------------- Choose your language to personalize your journey! -----------------");
+  print(
+      "-------------------------- Choose your language to personalize your journey! -----------------");
   print("Press A for Urdu");
   print("-----------------------");
   print("Press B for English");
@@ -16,8 +17,8 @@ print("-------------------------- Choose your language to personalize your journ
   print("-----------------------");
   print("Press 3 for Travel Packages");
   print("-----------------------");
-  print("Press 4 for Booking Package");
-  print("-----------------------");
+  print("Press 4 for Booking Page ");
+  print("-------------------------");
   print("Press 5 for Help Centre");
   print("======================");
   while (IsLogin == false) {

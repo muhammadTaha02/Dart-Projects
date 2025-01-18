@@ -1,4 +1,5 @@
 import 'dart:io';
+
 import 'bookingpage.dart';
 import 'destinatinationpage.dart';
 import 'helpcentrepage.dart';
@@ -6,11 +7,9 @@ import 'languagepage.dart';
 import 'travelpage.dart';
 
 executehomepage() {
- 
- print("-------------------------- Welcome—where your journey begins! -----------------------------");
- 
- 
- 
+  print(
+      "-------------------------- Welcome—where your journey begins! -----------------------------");
+
   bool IsLogin = false;
 
   print(
@@ -21,10 +20,10 @@ executehomepage() {
   print("Press 2 for Destination Page");
   print("------------------------------");
   print("Press 3 for Travel Packages");
- print("------------------------------");
-  print("Press 4 for Booking Package");
- print("------------------------------");
-  print("Press 5 for Help Centre");
+  print("------------------------------");
+  print("Press 4 for Booking Page");
+  print("------------------------");
+  print("Press 4 for Help Centre");
   print("==================================");
   while (IsLogin == false) {
     String input = stdin.readLineSync()!;
@@ -36,8 +35,8 @@ executehomepage() {
       executetravelpackage();
     } else if (input == "4") {
       executebooking();
-    } else if (input == "5") {
-      executehelpcentre();
+      }else if(input == "5"){
+        executehelpcentre();
       IsLogin = true;
     } else {
       print("Invalid Input");

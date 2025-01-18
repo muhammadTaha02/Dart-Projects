@@ -4,16 +4,16 @@ import 'DestinationGilgit.dart';
 import 'DestinationKpk.dart';
 import 'DestinationPunjab.dart';
 import 'DestinationSindh.dart';
+
 import 'bookingpage.dart';
 import 'helpcentrepage.dart';
 import 'languagepage.dart';
 import 'travelpage.dart';
 
 executedestination() {
-  
-  print("----------------------- Adventure awaits—discover your next destination with us ----------------------");
-  
-  
+  print(
+      "----------------------- Adventure awaits—discover your next destination with us ----------------------");
+
   bool IsLogin = false;
 
   print("Press B for Balochistan Tour");
@@ -32,7 +32,6 @@ executedestination() {
   print("Press 3 for Travel Packages");
   print("------------------------------");
   print("Press 4 for Booking Package");
-  print("------------------------------");
   print("Press 5 for Help Centre");
   print("==================================");
 
@@ -55,10 +54,10 @@ executedestination() {
       executetravelpackage();
     } else if (Input == "4") {
       executebooking();
-    } else if (Input == "5") {
-      executehelpcentre();
-      IsLogin = true;
-    } else {
+   } else if (Input == "5"){
+    executehelpcentre();
+   }
+    else {
       print("Invalid Input");
       print("Please Try Again");
       print("==================================");
