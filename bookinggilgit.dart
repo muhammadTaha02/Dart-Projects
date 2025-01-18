@@ -4,6 +4,6 @@
 
 
 travelgilgitcost(int numpeople,int numdays) {
- double costperperson =1500;
+ double costperperson =3000;
 return numpeople*numdays*costperperson;
 }

@@ -2,7 +2,7 @@
 
 
 travelbalochistancost(int numpeople,int numdays) {
- double costperperson =1500;
+ double costperperson =2500;
 return numpeople*numdays*costperperson;
 
 }
