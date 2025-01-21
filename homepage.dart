@@ -23,7 +23,7 @@ executehomepage() {
   print("------------------------------");
   print("Press 4 for Booking Page");
   print("------------------------");
-  print("Press 4 for Help Centre");
+  print("Press 5 for Help Centre");
   print("==================================");
   while (IsLogin == false) {
     String input = stdin.readLineSync()!;

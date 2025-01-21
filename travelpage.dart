@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'bookingpage.dart';
 import 'homepage.dart';
 
 import 'travelbalochistan.dart';
@@ -33,15 +34,28 @@ executetravelpackage() {
       print("Enter the number of people:");
       int? numPeople = int.tryParse(stdin.readLineSync() ?? "0");
       print("----------------------------------------");
-      
+
       print("Enter the number of days:");
       int? numDays = int.tryParse(stdin.readLineSync() ?? '0');
       print("----------------------------------------");
-     double costperparson=3000;
+      double costperparson = 3000;
 
       num totalcost = travelbalochistancost(3, 7);
-      print("Total cost for Balochistan Package:$totalcost");
-      print("=========================================");
+
+      if (numPeople != null &&
+          numDays != null &&
+          numPeople > 0 &&
+          numDays > 0) {
+        // Calling the function
+        double totalCost = travelbalochistancost(numPeople, numDays);
+
+        // Printing the result
+        print("Total Package Cost: \$${totalCost}");
+        print("=========================================");
+      } else {
+        print("Invalid input. Please enter positive numbers.");
+        print("----------------------------------------");
+      }
     } else if (input == "g") {
       print("Enter the number of people:");
       int? numPeople = int.tryParse(stdin.readLineSync() ?? "0");
@@ -51,9 +65,20 @@ executetravelpackage() {
       int? numDays = int.tryParse(stdin.readLineSync() ?? '0');
       print("----------------------------------------");
 
-      num totalcost1 = travelgilgit(4, 7);
-      print("Total Cost For Gilgit Baltistan Package: $totalcost1");
-      print("=========================================");
+      if (numPeople != null &&
+          numDays != null &&
+          numPeople > 0 &&
+          numDays > 0) {
+        // Calling the function
+        double totalCost = travelgilgit(numPeople, numDays);
+
+        // Printing the result
+        print("Total Package Cost: \$${totalCost}");
+        print("=========================================");
+      } else {
+        print("Invalid input. Please enter positive numbers.");
+        print("----------------------------------------");
+      }
     } else if (input == "k") {
       print("Enter Number Of Peoples:");
       int? numpeople = int.tryParse(stdin.readLineSync() ?? "0");
@@ -63,34 +88,66 @@ executetravelpackage() {
       int? numDays = int.tryParse(stdin.readLineSync() ?? "0");
       print("----------------------------------------");
 
-      num totalcost2 = travelkpk(4, 7);
-      print("Total Cost For KPK Package: $totalcost2");
+      if (numpeople != null &&
+          numDays != null &&
+          numpeople > 0 &&
+          numDays > 0) {
+        // Calling the function
+        double totalCost = travelkpk(numpeople, numDays);
+
+        // Printing the result
+        print("Total Package Cost: \$${totalCost}");
+        print("=========================================");
+      } else {
+        print("Invalid input. Please enter positive numbers.");
+        print("----------------------------------------");
+      }
     } else if (input == "p") {
       print("Enter Number Of Peoples:");
       int? numpeople = int.tryParse(stdin.readLineSync() ?? "0");
       print("----------------------------------------");
+
       print("Enter the number of days:");
       int? numDays = int.tryParse(stdin.readLineSync() ?? "0");
       print("----------------------------------------");
+      if (numpeople != null &&
+          numDays != null &&
+          numpeople > 0 &&
+          numDays > 0) {
+        // Calling the function
+        double totalCost = travelpunjab(numpeople, numDays);
 
-      num totalcost3 = travelpunjab(4, 7);
-      print("Total Cost For Punjab Package: $totalcost3");
+        // Printing the result
+        print("Total Package Cost: \$${totalCost}");
+        print("=========================================");
+      } else {
+        print("Invalid input. Please enter positive numbers.");
+        print("----------------------------------------");
+      }
     } else if (input == "s") {
-      
       print("Enter Number Of Peoples:");
       int? numpeople = int.tryParse(stdin.readLineSync() ?? "0");
       print("----------------------------------------");
-      
+
       print("Enter the number of days:");
       int? numDays = int.tryParse(stdin.readLineSync() ?? "0");
       print("----------------------------------------");
 
-      num totalcost4 = travelsindh(4, 7);
-      print("Total Cost For Sindh Package: $totalcost4");
-      print("=========================================");
-    
-    
-    
+      if (numpeople != null &&
+          numDays != null &&
+          numpeople > 0 &&
+          numDays > 0) {
+        // Calling the function
+        double totalCost = travelsindh(numpeople, numDays);
+
+        // Printing the result
+        print("Total Package Cost: \$${totalCost}");
+        print("=========================================");
+      } else {
+        print("Invalid input. Please enter positive numbers.");
+        print("----------------------------------------");
+        executebooking( );
+      }
     } else if (input == "1") {
       print(executehomepage());
     } else {

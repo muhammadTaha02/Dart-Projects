@@ -3,10 +3,9 @@ import 'dart:io';
 import 'homepage.dart';
 
 void main() {
-  
-  print("----------------------- 'Welcome Back ! Log in to continue your journey.' ----------------------");
-  
-  
+  print(
+      "----------------------- 'Welcome Back ! Log in to continue your journey.' ----------------------");
+
   bool isLogin = false;
 
   // Hardcoded credentials
@@ -28,7 +27,7 @@ void main() {
       print("Login successful!");
       print("==============================");
     } else {
-      print("Invalid Email or Password");
+      print("Login Failed");
       print("Please try again");
       print("==============================");
     }
